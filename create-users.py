@@ -51,7 +51,8 @@ def main():
         os.system(cmd)
 
         for group in groups:
-            #REPLACE THIS COMMENT with one that answers "What is this IF statement looking for and why? If group !='-' what happens?"
+            # If statement looks for the "-" character in the groups field. If it is present, that means no groups and the logic for adding to groups is skipped.
+	    # If there is no dash, there must be at least one group in the group field and the logic is carried out to add the user that/those group/groups.
             if group != '-':
                 print("==> Assigning %s to the %s group..." % (username,group))
                 cmd = "/usr/sbin/adduser %s %s" % (username,group)
