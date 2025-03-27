@@ -19,3 +19,5 @@ Ensure that create-users.py is executable. To run: ./create-users.py < <name of 
 
 
 ### "Dry Run"
+
+If the user elects to do a dry run, the lines with system commands are commented out. This way, the code can run through the logic of adding users, however it stops short of the system commands which would actually run the changes set up by the program logic.
